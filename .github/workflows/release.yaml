@@ -36,8 +36,8 @@ jobs:
     - name: Package release
       run: |
         mkdir -p package
-        cp target/${{ matrix.target }}/release/my_project_name package/
-        7z a my_project_name-${{ matrix.target }}.${{ matrix.ext }} package/
+        cp target/${{ matrix.target }}/release/war3remap package/
+        7z a war3remap-${{ matrix.target }}.${{ matrix.ext }} package/
 
     - name: Upload release
       uses: actions/upload-release-asset@v1
@@ -45,6 +45,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ github.event.release.upload_url }}
-        asset_path: ./my_project_name-${{ matrix.target }}.${{ matrix.ext }}
-        asset_name: my_project_name-${{ matrix.target }}.${{ matrix.ext }}
+        asset_path: ./war3remap-${{ matrix.target }}.${{ matrix.ext }}
+        asset_name: war3remap-${{ matrix.target }}.${{ matrix.ext }}
         asset_content_type: application/octet-stream
