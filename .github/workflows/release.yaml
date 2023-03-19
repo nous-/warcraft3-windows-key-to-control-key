@@ -36,7 +36,7 @@ jobs:
     - name: Package release
       run: |
         mkdir -p package
-        cp target/${{ matrix.target }}/release/war3remap package/
+        cp target/${{ matrix.target }}/release/war3remap.exe package/
         7z a war3remap-${{ matrix.target }}.${{ matrix.ext }} package/
 
     - name: Upload release
