@@ -1,0 +1,1 @@
+When playing Warcraft 3 on Windows, I prefer to use the Windows key as the Control key.
