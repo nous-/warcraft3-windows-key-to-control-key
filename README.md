@@ -6,8 +6,6 @@ I wrote this for playing Warcraft 3 on Windows. This is a built in option on OSX
 
 My default position on internet binaries is non-trust. However, I set this up to be something I might even download and run. So short of reviewing and compiling the code yourself, you can see github machines are doing the work of building the binaries out of the source. That might work for you.
 
-Let's not forget that autohotkeys was filled with trojans 20 years ago.
-
 Enjoy
 
 > PS Setting your keys to `grid` in game, also maps the the hero inventory items map to T, Y, G, H, B, N. Had no idea.
